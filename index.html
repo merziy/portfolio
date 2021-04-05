@@ -2,99 +2,65 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - FCC Portfolio</title>
-  <link rel="stylesheet" href="./style.css">
-
+  <title>Alexander Mathis | Personal Portfolio</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/script.js"></script>
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-<!--LINKS-->
 
-<script src="https://kit.fontawesome.com/067040a684.js" crossorigin="anonymous"></script>
-
-<!--NAV-->
-
-<nav id="navbar">
-  <ul class="navlist">
-    <li> <a href="#about">About</a></li>
-    <li> <a href="#work">Work</a></li>
-    <li> <a href="#contact">Contact</a></li>
-  </ul>
+<nav class="sidenav" id="navs">
+  <input type="image" src="assets/arrow-down.png"
+  id="nav" onclick="collapseNav()">
+  <div class="select">
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+  </div>
 </nav>
-<!--BODY-->
-<section id="welcome-section">
-  <h1>Hi, my name is Alex.</h1>
-  <p>I am a web developer.</p>
+
+<article id="about">
+  <h1>About Me</h1>
+  <p>Bonjour! My name is Alexander Mathis, and I am a Web Developer. My experience has lead me to working with WordPress, Shopify, Magneto, and a variety of CMS, but I love to learn new things, and have an interest in programming in general.</p>
+  <p>I am currently working on becoming Full Stack Certified through Codecademy, and spend some of my free time learning back-end languages.</p>
+  <p>I spend much of my free time reading. I like surrealist literature, philosophy, and art.</p>
 </section>
 
-<section id="projects" class="project-title">
-  <h2>These are some of my projects.</h2>
-  <div class="work-grid">
-    <a href="https://github.com/merziy/Sample-Websites/tree/gh-pages/fcc-guitar-landing-page"
-       target="_blank"
-       class="project-tile">
-      <img class="work-img"
-           src="https://i.ibb.co/q5QZFSW/Capture3.png"
-           alt="landing page project link"/>
-      <p class="work-title">Landing Page</p>
-    </a>
-    <a href="https://github.com/merziy/Sample-Websites/tree/gh-pages/fcc-technical-documentation"
-       target="_blank">
-      <img class="work-img"
-           src="https://i.ibb.co/YPQKKrG/Capture4.png"
-           alt="technical documentation project link"/>
-      <p class="work-title">Technical Documentation</p>
-    </a>
-     <a href="https://github.com/merziy/Sample-Websites/tree/gh-pages/akira-kurosawa-tribute-page"
-       target="_blank">
-      <img class="work-img"      src="https://i.ibb.co/d2qDJXP/Capture.png"
-           alt="tribute page project link"/>
-      <p class="work-title">Tribute Page</p>
-    </a>
-    <a href="https://github.com/merziy/Sample-Websites/tree/gh-pages/fcc-survey-page"
-       target="_blank">
-      <img class="work-img"
-           src="https://i.ibb.co/0YrTM1N/Capture2.png"
-           alt="survey page project link"/>
-      <p class="work-title">Survey Page</p>
-    </a> 
-  </div>
-  <a href="https://github.com/merziy"
-     class="github-button"
-     id="profile-links"
-     target="_blank"
-     >Show more</a>
-  </section>
-  <section id="contact">
-    <h2 class="contact-header">Let's work together...</h2>
-    <div class="contact-links">
-      <a href="https://github.com/merziy"
-         class="profile-links"
-         id="profile-link"
-         target="_blank">
-        <i class="fab fa-github"></i>GitHub</a>
-      <a href="https://www.linkedin.com/in/azmathis/"
-         class="profile-links"
-         target="_blank">
-        <i class="fab fa-linkedin-in"></i>LinkedIn</a>
-      <a href="mailto:alexzandermathis@gmail.com"
-         class="profile-links">
-        <i class="fas fa-envelope"></i></i>Email</a>
-      <a href="tel:336-448-9778"
-         class="profile-links">
-        <i class="fas fa-phone-square-alt"></i>Call me</a>
-    </div>
- <a href="https://www.docdroid.net/mO7u1ad/resume-2-docx"
-     target="_blank"
-     class="profile-links">Résumé</a>
-  </section>
-<!--Footer-->
+<article id="projects" class="project-title">
+  <h2>Types of Projects:</h2>
+  <ul>
+    <li>Websites</li>
+    <li>Javascript Programs</li>
+    <li>Technical Documentation</li>
+  </ul>
+</article>
 
-<section id="footer">
-  <footer>
-    <p>Alexander Mathis, 2020.</p>
-  </footer>
-</section>   
+<article id="contact">
+  <h2 class="contact-header">Contatct</h2>
+  <p>Want to reach out? Please shoot me a message!</p>
+  <div class="contact-links">
+    <a href="https://github.com/merziy"
+        class="profile-links"
+        target="_blank">
+      <i class="fab fa-github"></i>GitHub</a>
+    <a href="https://www.linkedin.com/in/azmathis/"
+        class="profile-links"
+        target="_blank">
+      <i class="fab fa-linkedin-in"></i>LinkedIn</a>
+    <a href="mailto:alexzandermathis@gmail.com"
+        class="profile-links">
+      <i class="fas fa-envelope"></i></i>Email</a>
+  </div>
+    <a href="https://www.docdroid.net/mO7u1ad/resume-2-docx"
+    target="_blank"
+         class="profile-links">Résumé</a>
+</article>
+
+<footer id="footer">
+  <p>Alexander Mathis, 2021.</p>
+</footer> 
   
 </body>
+
 </html>

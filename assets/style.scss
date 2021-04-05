@@ -1,0 +1,32 @@
+.sidenav {
+    background-color: white;
+    overflow: hidden;
+
+    .select {
+      display: none;
+
+      .active {
+        display: block;
+      }
+    }
+
+    a, input {
+      float: right;
+      color: black;
+      text-align: center;
+      padding: 1rem 1rem;
+      text-decoration: none;
+
+      :hover {
+        color: green;
+      }
+    }
+
+    .icon {
+      display: none;
+    }
+  }
+
+  .select.active {
+    display: block;
+  }

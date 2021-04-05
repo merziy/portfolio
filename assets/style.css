@@ -1,0 +1,29 @@
+.sidenav {
+  background-color: white;
+  overflow: hidden;
+}
+.sidenav .select {
+  display: none;
+}
+.sidenav .select .active {
+  display: block;
+}
+.sidenav a, .sidenav input {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 1rem 1rem;
+  text-decoration: none;
+}
+.sidenav a :hover, .sidenav input :hover {
+  color: green;
+}
+.sidenav .icon {
+  display: none;
+}
+
+.select.active {
+  display: block;
+}
+
+/*# sourceMappingURL=style.css.map */
