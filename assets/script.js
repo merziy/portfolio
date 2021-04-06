@@ -1,3 +1,3 @@
 const collapseNav = () => {
-    document.getElementById("nav").classList.toggle("active");
+    document.getElementById("select").classList.toggle("active");
 }

@@ -1,29 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+* {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+body {
+  padding: 1rem 3rem;
+  font-family: "Noto Sans", sans-serif;
+}
+
 .sidenav {
+  width: 8rem;
   background-color: white;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  float: right;
 }
-.sidenav .select {
+.sidenav input {
+  width: fit-content;
+}
+.sidenav #select {
   display: none;
 }
-.sidenav .select .active {
-  display: block;
+.sidenav .active {
+  display: block !important;
 }
 .sidenav a, .sidenav input {
+  align-self: flex-end;
   float: right;
   color: black;
   text-align: center;
   padding: 1rem 1rem;
   text-decoration: none;
 }
-.sidenav a :hover, .sidenav input :hover {
-  color: green;
-}
 .sidenav .icon {
   display: none;
 }
 
-.select.active {
-  display: block;
+#about img {
+  width: 20rem;
+  height: 100%;
+  float: right;
+}
+
+#contact a {
+  color: black;
+  text-decoration: none;
+}
+#contact i {
+  padding: 0rem 0.5rem;
+}
+#contact .contact-links .profile-links :hover {
+  transform: translateY(4px);
 }
 
 /*# sourceMappingURL=style.css.map */

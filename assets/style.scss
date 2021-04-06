@@ -1,25 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+* {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+body {
+  padding: 1rem 3rem;
+
+  font-family: 'Noto Sans', sans-serif;
+}
+
 .sidenav {
+  width: 8rem;
     background-color: white;
     overflow: hidden;
+    display: flex;  
+    flex-direction: column;
+    float: right;
 
-    .select {
+    input {
+      width: fit-content;
+    }
+
+    #select {
       display: none;
+    }
 
-      .active {
-        display: block;
-      }
+    .active {
+      display: block !important;
     }
 
     a, input {
+      align-self: flex-end;
       float: right;
       color: black;
       text-align: center;
       padding: 1rem 1rem;
       text-decoration: none;
-
-      :hover {
-        color: green;
-      }
     }
 
     .icon {
@@ -27,6 +47,31 @@
     }
   }
 
-  .select.active {
-    display: block;
+  #about {
+    img {
+      width: 20rem;
+      height: 100%;
+      float: right;
+    }
   }
+
+  #contact {
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    i {
+      padding: 0rem 0.5rem;
+    }
+
+    .contact-links {
+      .profile-links {
+        :hover {
+          transform: translateY(4px);
+        }
+      }
+    }
+  }
+
+  
