@@ -6,11 +6,6 @@
   bottom: 0;
 }
 
-body {
-  padding: 1rem 3rem;
-  font-family: "Noto Sans", sans-serif;
-}
-
 .sidenav {
   width: 8rem;
   background-color: white;
@@ -18,6 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   float: right;
+  margin-top: -1rem;
 }
 .sidenav input {
   width: fit-content;
@@ -28,22 +24,30 @@ body {
 .sidenav .active {
   display: block !important;
 }
+.sidenav .active a:hover {
+  transition: background-color 0.5s ease;
+  background-color: lightgray;
+}
 .sidenav a, .sidenav input {
   align-self: flex-end;
   float: right;
   color: black;
   text-align: center;
-  padding: 1rem 1rem;
+  padding: 1rem 0rem;
   text-decoration: none;
 }
 .sidenav .icon {
   display: none;
 }
 
-#about img {
-  width: 20rem;
-  height: 100%;
-  float: right;
+#projects li {
+  font-size: 1rem;
+}
+
+#skills .skill-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 #contact a {
@@ -53,8 +57,124 @@ body {
 #contact i {
   padding: 0rem 0.5rem;
 }
+#contact .contact-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 #contact .contact-links .profile-links :hover {
   transform: translateY(4px);
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#footer {
+  bottom: 0rem;
+}
+
+@media only screen and (min-width: 300px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .sidenav {
+    display: none;
+  }
+
+  body {
+    padding: 0rem 1rem;
+    font-family: "Noto Sans", sans-serif;
+  }
+
+  #about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: auto;
+  }
+  #about img {
+    width: 100%;
+  }
+  #about h1 {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 2.3rem;
+  }
+
+  .sidenav {
+    display: block;
+    width: 5rem;
+  }
+
+  #about {
+    display: block;
+  }
+  #about img {
+    float: right;
+    width: 25rem;
+  }
+
+  #projects li {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  #sidenav {
+    width: 8rem;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  h1 {
+    display: flex;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  #skills .skill-links {
+    justify-content: unset;
+  }
+  #skills .skill-links .fab {
+    padding: 0rem 1rem;
+  }
+
+  #projects li {
+    font-size: 1rem;
+  }
+
+  #contact .contact-links {
+    justify-content: unset;
+  }
+  #contact .contact-links .fab, #contact .contact-links .fas {
+    padding: 0rem 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

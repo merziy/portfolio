@@ -7,51 +7,58 @@
   bottom: 0;
 }
 
-body {
-  padding: 1rem 3rem;
-
-  font-family: 'Noto Sans', sans-serif;
-}
-
 .sidenav {
   width: 8rem;
-    background-color: white;
-    overflow: hidden;
-    display: flex;  
-    flex-direction: column;
+  background-color: white;
+  overflow: hidden;
+  display: flex;  
+  flex-direction: column;
+  float: right;
+  margin-top: -1rem;
+
+  input {
+    width: fit-content;
+  }
+
+  #select {
+    display: none;
+    
+  }
+
+  .active {
+    display: block !important;
+  }
+
+  .active a:hover {
+    transition: background-color .5s ease;
+    background-color: lightgray;
+  }
+
+  a, input {
+    align-self: flex-end;
     float: right;
+    color: black;
+    text-align: center;
+    padding: 1rem 0rem;
+    text-decoration: none;
+  }
 
-    input {
-      width: fit-content;
-    }
+  .icon {
+    display: none;
+  }
+  }
 
-    #select {
-      display: none;
-    }
-
-    .active {
-      display: block !important;
-    }
-
-    a, input {
-      align-self: flex-end;
-      float: right;
-      color: black;
-      text-align: center;
-      padding: 1rem 1rem;
-      text-decoration: none;
-    }
-
-    .icon {
-      display: none;
+  #projects {
+    li {
+      font-size: 1rem;
     }
   }
 
-  #about {
-    img {
-      width: 20rem;
-      height: 100%;
-      float: right;
+  #skills {
+    .skill-links {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
     }
   }
 
@@ -66,6 +73,10 @@ body {
     }
 
     .contact-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
       .profile-links {
         :hover {
           transform: translateY(4px);
@@ -74,4 +85,134 @@ body {
     }
   }
 
-  
+  #page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+
+  #footer {
+    bottom: 0rem;
+  }
+
+  @media only screen and (min-width: 300px) {
+    h1 {
+      font-size: 2rem;
+    }
+    
+    h2 {
+      font-size: 1.5rem;
+    }
+    
+    p {
+      font-size: 1rem;
+    }
+
+    .sidenav {
+      display: none;
+    }
+
+    body {
+      padding: 0rem 1rem;
+      font-family: 'Noto Sans', sans-serif;
+    }
+
+    #about {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: auto;
+
+      img {
+        width: 100%;
+      }
+      
+      h1 {
+        text-align: center;
+      } 
+    }
+
+    #skills {
+      .skills-links {
+
+      }
+    }
+  }
+
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 2.3rem;
+  }
+
+  .sidenav {
+    display: block;
+    width: 5rem;
+  }
+
+  #about {
+    display: block;
+    img {
+      float: right;
+      width: 25rem;
+    }
+  }
+
+  #projects {
+    li {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  #sidenav {
+    width: 8rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  h1 {
+    display: flex;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  #skills {
+    .skill-links {
+      justify-content: unset;
+
+      .fab {
+        padding: 0rem 1rem;
+      }
+    }
+  }
+
+  #projects {
+    li {
+      font-size: 1rem;
+    }
+  }
+
+  #contact {
+    .contact-links {
+      justify-content: unset;
+
+      .fab, .fas {
+        padding: 0rem 2rem;
+      }
+    }
+  }
+}
