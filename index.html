@@ -3,27 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <title>Alexander Mathis | Personal Portfolio</title>
+
   <link rel="stylesheet" href="assets/style.css">
   <script src="assets/script.js"></script>
+  <script src="https://kit.fontawesome.com/4bc152d89f.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 
-<nav class="sidenav" id="navs">
+<nav class="sidenav">
   <input type="image" src="assets/arrow-down.png"
   id="nav" onclick="collapseNav()">
-  <div class="select">
-  <a href="#about">About</a>
-  <a href="#projects">Projects</a>
-  <a href="#skills">Skills</a>
-  <a href="#contact">Contact</a>
+  <div id="select">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
   </div>
 </nav>
 
 <article id="about">
+  <img src="assets/Marcel-Duchamp.jpg">
   <h1>About Me</h1>
   <p>Bonjour! My name is Alexander Mathis, and I am a Web Developer. My experience has lead me to working with WordPress, Shopify, Magneto, and a variety of CMS, but I love to learn new things, and have an interest in programming in general.</p>
-  <p>I am currently working on becoming Full Stack Certified through Codecademy, and spend some of my free time learning back-end languages.</p>
+  <p>I am currently working on becoming Full Stack Certified through Codecademy, and spend some of my free time learning back-end languages. You can check out some of the work i've done by clicking the GitHub link at the bottom of the page.</p>
   <p>I spend much of my free time reading. I like surrealist literature, philosophy, and art.</p>
 </section>
 
@@ -36,14 +40,26 @@
   </ul>
 </article>
 
+<article id="skills">
+  <h2>Skills</h2>
+  <div class="skill-links">
+    <i class="fab fa-html5"></i>
+    <i class="fab fa-npm"></i>
+    <i class="fab fa-css3-alt"></i>
+    <i class="fab fa-js"></i>
+    <i class="fab fa-git"></i>
+    <i class="fab fa-linux"></i>
+  </div>
+</article>
+
 <article id="contact">
-  <h2 class="contact-header">Contatct</h2>
+  <h2 class="contact-header">Contact</h2>
   <p>Want to reach out? Please shoot me a message!</p>
   <div class="contact-links">
     <a href="https://github.com/merziy"
         class="profile-links"
         target="_blank">
-      <i class="fab fa-github"></i>GitHub</a>
+      <i class="fab fa-github-square"></i>GitHub</a>
     <a href="https://www.linkedin.com/in/azmathis/"
         class="profile-links"
         target="_blank">
@@ -51,10 +67,10 @@
     <a href="mailto:alexzandermathis@gmail.com"
         class="profile-links">
       <i class="fas fa-envelope"></i></i>Email</a>
-  </div>
     <a href="https://www.docdroid.net/mO7u1ad/resume-2-docx"
     target="_blank"
-         class="profile-links">Résumé</a>
+         class="profile-links"><i class="fas fa-file-upload"></i>Résumé</a>
+  </div>
 </article>
 
 <footer id="footer">
