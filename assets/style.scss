@@ -122,19 +122,27 @@
       flex-direction: column;
       width: auto;
 
-      img {
+      figure {
+        display: flex;
+        align-self: center;
+        flex-direction: column;
+        float: right;
+        text-align: center;
         width: 100%;
+
+        img {
+          width: 100%;
+        }
+
+        figcaption {
+          font-style: italic;   
+          margin-bottom: -2rem;
+        }
       }
       
       h1 {
         text-align: center;
       } 
-    }
-
-    #skills {
-      .skills-links {
-
-      }
     }
   }
 
@@ -158,9 +166,15 @@
 
   #about {
     display: block;
-    img {
+
+    figure {
       float: right;
       width: 25rem;
+
+      img {
+        float: right;
+        width: 25rem;
+      }
     }
   }
 
@@ -177,7 +191,7 @@
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1200px) {
   h1 {
     display: flex;
   }
@@ -188,6 +202,24 @@
 
   p {
     font-size: 1.3rem;
+  }
+
+  #page-container {
+    padding: 0rem 5rem;
+  }
+
+  #about {
+    display: block;
+
+    figure {
+      float: right;
+      width: 35rem;
+
+      img {
+        float: right;
+        width: 35rem;
+      }
+    }
   }
 
   #skills {
@@ -214,5 +246,9 @@
         padding: 0rem 2rem;
       }
     }
+  }
+
+  #footer {
+    padding: 0rem 5rem;
   }
 }

@@ -103,8 +103,20 @@
     flex-direction: column;
     width: auto;
   }
-  #about img {
+  #about figure {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    float: right;
+    text-align: center;
     width: 100%;
+  }
+  #about figure img {
+    width: 100%;
+  }
+  #about figure figcaption {
+    font-style: italic;
+    margin-bottom: -2rem;
   }
   #about h1 {
     text-align: center;
@@ -131,7 +143,11 @@
   #about {
     display: block;
   }
-  #about img {
+  #about figure {
+    float: right;
+    width: 25rem;
+  }
+  #about figure img {
     float: right;
     width: 25rem;
   }
@@ -145,7 +161,7 @@
     width: 8rem;
   }
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1200px) {
   h1 {
     display: flex;
   }
@@ -156,6 +172,22 @@
 
   p {
     font-size: 1.3rem;
+  }
+
+  #page-container {
+    padding: 0rem 5rem;
+  }
+
+  #about {
+    display: block;
+  }
+  #about figure {
+    float: right;
+    width: 35rem;
+  }
+  #about figure img {
+    float: right;
+    width: 35rem;
   }
 
   #skills .skill-links {
@@ -174,6 +206,10 @@
   }
   #contact .contact-links .fab, #contact .contact-links .fas {
     padding: 0rem 2rem;
+  }
+
+  #footer {
+    padding: 0rem 5rem;
   }
 }
 
