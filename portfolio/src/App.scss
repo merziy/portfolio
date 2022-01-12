@@ -32,7 +32,7 @@ Home page
 /* 
 
 
-Styling for CSS Grid
+Styling for Home Page's CSS Grid
 
 
 */
@@ -68,5 +68,61 @@ Styling for CSS Grid
     grid-column: 9 /-1;
     grid-row: 1;
     padding-top: 10%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .grid-wrapper {
+    display: block;
+    #sidebar {
+      display: none;
+    }
+    #design-1 {
+      display: flex;
+      justify-content: center;
+      padding: 0rem;
+    }
+    #design-2 {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+/*
+
+Portfolio 
+
+*/
+
+.portfolio {
+  #title {
+    text-align: center;
+  }
+  #links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    figure {
+      text-align: center;
+    }
+  }
+}
+
+/*
+
+Contact
+
+*/
+
+.contact {
+  display: flex;
+  justify-content: center;
+  #contact-info {
+    border: 1px solid thistle;
+    border-radius: 3px;
+    padding: 1rem;
+    width: fit-content;
+    text-align: center;
   }
 }

@@ -3,7 +3,11 @@ import React from "react";
 const Home = () => {
   return (
     <div className="contact">
-      <h1>Contact</h1>
+      <section id="contact-info">
+        <p>email: alexzandermathis@gmail.com</p>
+        <p>phone: 336-448-9778</p>
+        <p>linkedin: linkedin.com/i/azmathis</p>
+      </section>
     </div>
   );
 };
