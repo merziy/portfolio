@@ -6,6 +6,7 @@ import Home from "./pages/home";
 import Portfolio from "./pages/portfolio";
 import Contact from "./pages/contact";
 import Blog from "./pages/blog";
+import SignUp from "./pages/signIn";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="sign-in" element={<SignUp />} />
       </Routes>
     </Router>
   );
