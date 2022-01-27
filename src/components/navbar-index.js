@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React } from "react";
 import { Nav, NavLink, Bars, NavMenu } from "./navbar";
 
 const Navbar = () => {
