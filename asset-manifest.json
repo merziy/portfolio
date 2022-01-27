@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.b82d367e.css",
+    "main.js": "/portfolio/static/js/main.8cf8a870.js",
+    "static/media/dali-temptation.webp": "/portfolio/static/media/dali-temptation.84bbbd0568fe8f01f641.webp",
+    "static/media/mcc.webp": "/portfolio/static/media/mcc.b096a9277c10c76097ab.webp",
+    "static/media/credit-score-dashboard.webp": "/portfolio/static/media/credit-score-dashboard.99c5b45a22007313906e.webp",
+    "index.html": "/portfolio/index.html",
+    "main.b82d367e.css.map": "/portfolio/static/css/main.b82d367e.css.map",
+    "main.8cf8a870.js.map": "/portfolio/static/js/main.8cf8a870.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b82d367e.css",
+    "static/js/main.8cf8a870.js"
+  ]
+}
