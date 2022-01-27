@@ -157,6 +157,13 @@ Contact
     padding: 5rem;
     width: fit-content;
     text-align: center;
+    a {
+      color: palevioletred;
+      text-decoration: none;
+    }
+    a:hover {
+      color: peru;
+    }
   }
 }
 
