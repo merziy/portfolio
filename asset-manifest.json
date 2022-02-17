@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.532dedcd.css",
-    "main.js": "/portfolio/static/js/main.7286e691.js",
-    "static/media/dali-temptation.webp": "/portfolio/static/media/dali-temptation.84bbbd0568fe8f01f641.webp",
-    "static/media/mcc.webp": "/portfolio/static/media/mcc.b096a9277c10c76097ab.webp",
-    "static/media/credit-score-dashboard.webp": "/portfolio/static/media/credit-score-dashboard.99c5b45a22007313906e.webp",
-    "index.html": "/portfolio/index.html",
-    "main.532dedcd.css.map": "/portfolio/static/css/main.532dedcd.css.map",
-    "main.7286e691.js.map": "/portfolio/static/js/main.7286e691.js.map"
+    "main.css": "/static/css/main.7efd737a.css",
+    "main.js": "/static/js/main.ca7f7de5.js",
+    "static/media/dali-temptation.webp": "/static/media/dali-temptation.84bbbd0568fe8f01f641.webp",
+    "static/media/mcc.webp": "/static/media/mcc.b096a9277c10c76097ab.webp",
+    "static/media/credit-score-dashboard.webp": "/static/media/credit-score-dashboard.99c5b45a22007313906e.webp",
+    "static/media/crud.webp": "/static/media/crud.0180746b6c06adeabd38.webp",
+    "static/media/go-react-chat-app.webp": "/static/media/go-react-chat-app.d75e8f65f8a316146975.webp",
+    "index.html": "/index.html",
+    "main.7efd737a.css.map": "/static/css/main.7efd737a.css.map",
+    "main.ca7f7de5.js.map": "/static/js/main.ca7f7de5.js.map"
   },
   "entrypoints": [
-    "static/css/main.532dedcd.css",
-    "static/js/main.7286e691.js"
+    "static/css/main.7efd737a.css",
+    "static/js/main.ca7f7de5.js"
   ]
 }
