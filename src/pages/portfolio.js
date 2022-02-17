@@ -48,6 +48,22 @@ const Home = () => {
             Realtime Chat Application (Go, React, Docker, Sass)
           </figcaption>
         </figure>
+        <figure>
+          <a
+            href="https://github.com/merziy/vue-flask-crud-app"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              src={require("../assets/crud.webp")}
+              alt="Front/Backend CRUD"
+              id="crud"
+            ></img>
+          </a>
+          <figcaption>
+            Full Stack CRUD Application (Vue, Python, Flask, Bootstrap)
+          </figcaption>
+        </figure>
       </section>
     </div>
   );
