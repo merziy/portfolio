@@ -5,9 +5,19 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
+        'pale-kings-blue': '#94CCDE',
+      },
+      fontFamily: {
+        'sans': [
+          'futura-pt',
+          'sans-serif',
+        ]
+      }
+    },
   },
-  plugins: [
-  ],
-}
-
+  plugins: [],
+};
