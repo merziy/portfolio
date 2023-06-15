@@ -2,7 +2,6 @@
     <canvas ref="canvas"></canvas>
 </template>
 <script lang="ts">
-import { onMounted, onBeforeUnmount } from 'vue';
 import * as THREE from 'three';
 
 export default {
