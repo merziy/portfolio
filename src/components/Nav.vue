@@ -1,20 +1,17 @@
-import { useRoute, useRouter } from 'vue-router';
-
-
 <template>
     <nav class="">
-        <ul class="flex border-b">
+        <ul class="flex justify-center md:justify-end border-b border-black">
             <li class="-mb-px mr-1">
-                <router-link to="/" class="inline-block py-2 px-4 text-blue-700 font-semibold">Home</router-link>
+                <router-link to="/" class="inline-block py-2 px-4 text-black font-semibold">HOME</router-link>
             </li>
             <li class="-mb-px mr-1">
-                <router-link to="/portfolio" class="inline-block py-2 px-4 text-blue-700 font-semibold" href="#">Portfolio</router-link>
+                <router-link to="/portfolio" class="inline-block py-2 px-4 text-black font-semibold" href="#">PORTFOLIO</router-link>
             </li>
             <li class="-mb-px mr-1">
-                <router-link to="/contact" class="inline-block py-2 px-4 text-blue-700 font-semibold" href="#">Contact</router-link>
+                <router-link to="/contact" class="inline-block py-2 px-4 text-black font-semibold" href="#">CONTACT</router-link>
             </li>
             <li class="-mb-px mr-1">
-                <router-link to="/bio" class="inline-block py-2 px-4 text-blue-700 font-semibold" href="#">Bio</router-link>
+                <router-link to="/bio" class="inline-block py-2 px-4 text-black font-semibold" href="#">BIO</router-link>
             </li>
         </ul>
     </nav>
