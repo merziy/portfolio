@@ -1,13 +1,14 @@
 <template>
-    <canvas ref="canvas"></canvas>
+    <canvas id="canvas" ref="canvas"></canvas>
 </template>
 <script lang="ts">
 import * as THREE from 'three';
+import WebGL from 'three/addons/capabilities/WebGL.js';
 
 export default {
-    mounted() {
+  mounted() {
     this.initThree();
-    },
+  },
   beforeUnmount() {
     this.cleanUpThree();
   },
@@ -37,7 +38,12 @@ export default {
         renderer.render(scene, camera);
       };
 
-      animate();
+      if ( WebGL.isWebGLAvailable() ) {
+        animate();
+      } else {
+        const warning = WebGL.getWebGLErrorMessage();
+        document.querySelector('#canvas')?.appendChild( warning );
+      }
     },
     cleanUpThree() {
       // Clean up Three.js objects and event listeners here if necessary
