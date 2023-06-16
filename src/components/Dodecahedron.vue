@@ -23,6 +23,7 @@ export default {
       );
       const renderer = new THREE.WebGLRenderer({ canvas: this.$refs.canvas as HTMLCanvasElement, alpha: true });
       renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.setPixelRatio(window.devicePixelRatio); // for HiDPI displays
 
       const geometry = new THREE.DodecahedronGeometry(1);
       const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
@@ -35,6 +36,7 @@ export default {
         requestAnimationFrame(animate);
         dodecahedron.rotation.x += 0.01;
         dodecahedron.rotation.y += 0.01;
+        camera.updateProjectionMatrix();
         renderer.render(scene, camera);
       };
 
