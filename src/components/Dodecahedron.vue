@@ -27,7 +27,6 @@ export default {
         1000
       );
       const renderer = new THREE.WebGLRenderer({ canvas: this.$refs.canvas as HTMLCanvasElement, alpha: true });
-      // renderer.useLegacyLights = true; // Maybe I dont need this?
       renderer.setSize(window.innerWidth, window.innerHeight);
       renderer.setPixelRatio(window.devicePixelRatio); // for HiDPI displays
       
