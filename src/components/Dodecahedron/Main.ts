@@ -1,11 +1,11 @@
-import * as THREE from 'three';
-import WebGL from 'three/addons/capabilities/WebGL.js';
-import { Lights } from './Lights';
-import { Camera } from './Camera';
-import { Renderer } from './Renderer';
-import { Animate } from './Animate';
-import { Dodecahedron } from './Dodecahedron'; 
-import { Resizer } from './Resizer';
+import * as THREE from "three";
+import WebGL from "three/addons/capabilities/WebGL.js";
+import { Lights } from "./Lights";
+import { Camera } from "./Camera";
+import { Renderer } from "./Renderer";
+import { Animate } from "./Animate";
+import { Dodecahedron } from "./Dodecahedron";
+import { Resizer } from "./Resizer";
 
 export default class ThreeObject {
   private scene: THREE.Scene;
@@ -24,9 +24,10 @@ export default class ThreeObject {
     this.dodecahedron = new Dodecahedron();
     this.resizer = new Resizer(
       this.renderer.getRenderer(),
-      this.camera.createCamera()
+      this.camera.createCamera(canvas),
+      this.canvas
     );
-    
+
     this.init();
   }
 
@@ -34,16 +35,11 @@ export default class ThreeObject {
     const renderer = this.renderer.getRenderer();
     const light = this.lights.createLights();
     this.scene.add(light);
-    const camera = this.camera.createCamera();
+    const camera = this.camera.createCamera(this.canvas);
     const dodecahedron = this.dodecahedron.dodecahedron;
     this.dodecahedron.addToScene(this.scene);
 
-    const animate = new Animate(
-      this.scene,
-      camera,
-      renderer,
-      dodecahedron
-    );
+    const animate = new Animate(this.scene, camera, renderer, dodecahedron);
 
     if (WebGL.isWebGLAvailable()) {
       animate.animate();
@@ -54,6 +50,6 @@ export default class ThreeObject {
   }
 
   public cleanUp() {
-    // Clean up Three.js objects and event listeners here if necessary
+    this.scene.remove(this.dodecahedron.dodecahedron);
   }
 }

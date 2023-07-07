@@ -1,24 +1,27 @@
-import * as THREE from 'three';
+import * as THREE from "three";
 
 export class Renderer {
-    private renderer: THREE.WebGLRenderer;
+  private renderer: THREE.WebGLRenderer;
 
-    constructor(private canvas: HTMLCanvasElement) {
-        this.renderer = new THREE.WebGL1Renderer({ canvas: this.canvas, alpha: true });
-        this.renderer.setSize(window.innerWidth, window.innerHeight);
-        this.renderer.setPixelRatio(window.devicePixelRatio);
+  constructor(private canvas: HTMLCanvasElement) {
+    this.renderer = new THREE.WebGL1Renderer({
+      canvas: this.canvas,
+      alpha: true,
+    });
+    this.renderer.setSize(this.canvas.clientWidth, this.canvas.clientHeight);
+    this.renderer.setPixelRatio(window.devicePixelRatio);
 
-        window.addEventListener('resize', this.onWindowResize.bind(this));
-    }
+    window.addEventListener("resize", this.onWindowResize.bind(this));
+  }
 
-    private onWindowResize() {
-        const width = window.innerWidth;
-        const height = window.innerHeight;
+  private onWindowResize() {
+    const width = this.canvas.clientWidth;
+    const height = this.canvas.clientHeight;
 
-        this.renderer.setSize(width, height);
-    }
+    this.renderer.setSize(width, height);
+  }
 
-    public getRenderer(): THREE.WebGLRenderer {
-        return this.renderer;
-    }
+  public getRenderer(): THREE.WebGLRenderer {
+    return this.renderer;
+  }
 }
