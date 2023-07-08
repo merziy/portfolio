@@ -9,7 +9,7 @@ export class Dodecahedron {
     this.geometry = new THREE.DodecahedronGeometry(1);
     this.material = new THREE.MeshStandardMaterial({ color: "purple" });
     this.dodecahedron = new THREE.Mesh(this.geometry, this.material);
-    this.dodecahedron.scale.set(3, 3, 3); 
+    this.dodecahedron.scale.set(3, 3, 3);
   }
 
   public addToScene(scene: THREE.Scene) {

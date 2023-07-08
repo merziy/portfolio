@@ -7,7 +7,5 @@
 
 <script setup lang="ts">
 import Navigation from "./Nav.vue";
-components: {
-  Navigation;
-}
+export { Navigation };
 </script>
