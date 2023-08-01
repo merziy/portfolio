@@ -5,7 +5,10 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts">
 import Navigation from "./Nav.vue";
-export { Navigation };
+export default {
+  components: {
+    Navigation,
+}, };
 </script>

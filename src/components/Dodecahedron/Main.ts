@@ -6,6 +6,7 @@ import { Renderer } from "./Renderer";
 import { Animate } from "./Animate";
 import { Dodecahedron } from "./Dodecahedron";
 import { Resizer } from "./Resizer";
+import { createControls } from "./OrbitControls";
 
 export default class ThreeObject {
   private scene: THREE.Scene;
@@ -15,6 +16,7 @@ export default class ThreeObject {
   private dodecahedron: Dodecahedron;
   // @ts-ignore (idk)
   private resizer: Resizer;
+  private controls: createControls;
 
   constructor(private canvas: HTMLCanvasElement) {
     this.scene = new THREE.Scene();
@@ -27,6 +29,8 @@ export default class ThreeObject {
       this.camera.createCamera(canvas),
       this.canvas
     );
+    this.controls = new createControls();
+    this.controls.createControls(this.camera.createCamera(this.canvas), this.canvas);
 
     this.init();
   }
@@ -38,7 +42,6 @@ export default class ThreeObject {
     const camera = this.camera.createCamera(this.canvas);
     const dodecahedron = this.dodecahedron.dodecahedron;
     this.dodecahedron.addToScene(this.scene);
-
     const animate = new Animate(this.scene, camera, renderer, dodecahedron);
 
     if (WebGL.isWebGLAvailable()) {
