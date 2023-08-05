@@ -4,7 +4,7 @@ export class Renderer {
   private renderer: THREE.WebGLRenderer;
 
   constructor(private canvas: HTMLCanvasElement) {
-    this.renderer = new THREE.WebGL1Renderer({
+    this.renderer = new THREE.WebGLRenderer({
       canvas: this.canvas,
       alpha: true,
     });

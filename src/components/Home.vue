@@ -1,9 +1,9 @@
 <template>
-  <div class="bg-pale-kings-blue min-h-screen flex flex-col w-full">
+  <div class="bg-black min-h-screen flex flex-col w-full">
     <Navigation />
     <div class="grid grid-cols-1 md:grid-cols-2">
-      <section class="ml-5 md:ml-auto mx-auto max-w-sm md:max-w-sm font-sans">
-        <h1 class="md:mx-5 text-6xl md:text-8xl">Alexander Mathis</h1>
+      <section class="ml-5 md:ml-auto mx-auto max-w-sm md:max-w-sm font-sans text-white">
+        <h1 class="md:mx-5 text-6xl md:text-8xl font-hangul">Alexander Mathis</h1>
         <aside class="md:space-y-10 mt-3 md:mx-5 md:text-lg">
           <p class="inline md:block">
             Alexander Mathis is a front-end engineer based in New York City. He
@@ -16,9 +16,7 @@
           </p>
         </aside>
       </section>
-      <section class="mx-auto w-full flex">
         <canvas ref="canvasRef" id="canvas"></canvas>
-      </section>
     </div>
   </div>
 </template>
