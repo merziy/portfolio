@@ -4,14 +4,14 @@
       <li class="-mb-px mr-1">
         <router-link
           to="/"
-          class="inline-block py-2 px-4 text-white text-4xl font-hangul"
+          class="inline-block py-2 px-4 text-white text-2xl md:text-4xl font-hangul"
           >HOME</router-link
         >
       </li>
       <li class="-mb-px mr-1">
         <router-link
           to="/portfolio"
-          class="inline-block py-2 px-4 text-white text-4xl font-hangul"
+          class="inline-block py-2 px-4 text-white text-2xl md:text-4xl font-hangul"
           href="#"
           >PORTFOLIO</router-link
         >
@@ -19,7 +19,7 @@
       <li class="-mb-px mr-1">
         <router-link
           to="/contact"
-          class="inline-block py-2 px-4 text-white text-4xl font-hangul"
+          class="inline-block py-2 px-4 text-white text-2xl md:text-4xl font-hangul"
           href="#"
           >CONTACT</router-link
         >
@@ -27,7 +27,7 @@
       <li class="-mb-px mr-1">
         <router-link
           to="/bio"
-          class="inline-block py-2 px-4 text-white text-4xl font-hangul"
+          class="inline-block py-2 px-4 text-white text-2xl md:text-4xl font-hangul"
           href="#"
           >BIO</router-link
         >

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-sky bg-no-repeat bg-cover min-h-screen flex flex-col">
+  <div class="bg-black bg-no-repeat bg-cover min-h-screen flex flex-col">
     <Navigation />
     <h3>Test</h3>
   </div>
