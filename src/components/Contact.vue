@@ -2,11 +2,11 @@
   <div class="min-h-screen flex flex-col">
     <div class="flex-grow grid grid-cols-1 md:grid-cols-2">
       <Navigation />
-      <section class="text-center sm:text-start font-sans md:pl-52">
+      <section class="text-center sm:text-start font-sans md:pl-52 flex flex-col">
         <article class="mt-3 md:text-lg md:min-w-full text-blue">
           <h2 class="font-semibold">Here's where you can find me:</h2>
           <a class="mt-10 block underline" href="https://www.instagram.com/abscension/" target="_blank">Instagram</a>
-          <button class="block underline" @click.prevent="downloadPDF">Resume</button>
+          <button class="underline" @click.prevent="downloadPDF">Resume</button>
           <a class="block underline" href="https://www.linkedin.com/in/azmathis/" target="_blank">LinkedIn</a>
         </article>
       </section>

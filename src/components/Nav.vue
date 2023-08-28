@@ -62,7 +62,7 @@
   </nav>
   <!-- Mobile Menu -->
   <nav id="mobileMenu" class="hidden fixed top-0 bg-white">
-    <div class="text-blue h-screen px-4">
+    <div class="text-blue h-screen px-4 text-center">
       <h1 class="text-2xl font-bold underline py-2">Alexander Mathis</h1>
       <p class="py-2 font-semibold">
         Web Engineer with an interest in web design.
@@ -74,14 +74,16 @@
       <p class="py-2 font-semibold">Web accessibility and creativity.</p>
       <ul class="flex flex-col">
         <li class="">
-          <router-link to="/" class="inline-block text-blue text-2xl font-sans"
+          <router-link
+            to="/"
+            class="inline-block text-blue text-2xl font-semibold font-sans"
             >HOME</router-link
           >
         </li>
         <li class="">
           <router-link
             to="/portfolio"
-            class="inline-block text-blue text-2xl font-sans"
+            class="inline-block text-blue text-2xl font-semibold font-sans"
             href="#"
             >PORTFOLIO</router-link
           >
@@ -89,7 +91,7 @@
         <li class="">
           <router-link
             to="/contact"
-            class="inline-block text-blue text-2xl font-sans"
+            class="inline-block text-blue text-2xl font-semibold font-sans"
             href="#"
             >CONTACT</router-link
           >
@@ -97,7 +99,7 @@
         <li class="">
           <router-link
             to="/bio"
-            class="inline-block text-blue text-2xl font-sans"
+            class="inline-block text-blue text-2xl font-semibold font-sans"
             href="#"
             >BIO</router-link
           >
