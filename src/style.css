@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Hangul';
-  src: url('./assets/font/hngl.otf');
-  format: 'otf';
+  font-family: "Artisan";
+  src: url("./assets/font/artisan.otf");
+  format: "otf";
 }

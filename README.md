@@ -11,7 +11,8 @@ This is a working portfolio.
 
 [Rave Preservation Project]('http://www.ravepreservationproject.com/gallery/index.php#Switzerland/Z%C3%BCrich'), [The Designer's Republic]('https://www.thedesignersrepublic.com/wipeout'), [WARP Records]('https://warp.net/artists')
 
-# Links 
+# Links
+
 http://www.ravepreservationproject.com/gallery/index.php#Switzerland/Z%C3%BCrich
 https://www.reddit.com/r/typography/comments/f93bi1/comment/fiprp5y/
 https://anthology.rhizome.org/m9ndfukc-0-99

@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'sky': "url('./assets/img/water.png')",
+        iceblue: "url('./assets/img/ice-blue.png')",
       },
       colors: {
         transparent: "transparent",
@@ -13,10 +13,12 @@ export default {
         "eosine-pink": "#E6778A",
         "pyrite-yellow": "#B69648",
         "calanine-blue": "#78C6C2",
+        red: "#da1e28",
+        blue: "#0043ce",
       },
       fontFamily: {
         sans: ["futura-pt", "sans-serif"],
-        hangul: ["Hangul", "sans-serif"],
+        artisan: ["Artisan", "sans-serif"],
       },
     },
   },
